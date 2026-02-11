@@ -1,0 +1,28 @@
+{
+  "dataset": {
+    "total": 8256,
+    "train": 6604,
+    "test": 1652,
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "task1": {
+    "accuracy": 0.7808716707021792,
+    "precision": 1.0,
+    "recall": 0.7808716707021792,
+    "f1_score": 0.8769544527532291,
+    "lexicon_size": 457
+  },
+  "task2": {
+    "overall_accuracy": 0.27636113025499653,
+    "seen_accuracy": 0.23872679045092837,
+    "unseen_accuracy": 0.28957169459962756,
+    "num_connectives": 4703,
+    "num_senses": 11
+  },
+  "end_to_end": {
+    "accuracy": 0.0,
+    "correct": 0,
+    "total": 1652
+  }
+}

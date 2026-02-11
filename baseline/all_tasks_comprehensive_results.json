@@ -1,0 +1,47 @@
+{
+  "dataset": {
+    "total_samples": 7233,
+    "train_size": 5786,
+    "test_size": 1447,
+    "unique_sentences": 6672,
+    "test_split_ratio": 0.2,
+    "random_seed": 42
+  },
+  "lexicon": {
+    "total": 457,
+    "lexical": 337,
+    "suffixal": 120
+  },
+  "task1_first_connective": {
+    "accuracy": 0.8410504492052523,
+    "precision": 1.0,
+    "recall": 0.8410504492052523,
+    "f1_score": 0.9136636636636637,
+    "exact_match_accuracy": 0.33935907970419066
+  },
+  "task2_sense_classification": {
+    "overall_accuracy": 0.6275051831375259,
+    "seen_accuracy": 0.7126865671641791,
+    "unseen_accuracy": 0.384,
+    "seen_count": 1072,
+    "unseen_count": 375,
+    "num_connectives_in_training": 2140,
+    "num_senses": 12
+  },
+  "task3_multi_connective": {
+    "precision": 0.2536355859709153,
+    "recall": 0.4275414563806777,
+    "f1_score": 0.3183892617449664,
+    "sentence_accuracy": 0.15355805243445692,
+    "total_sentences": 1335,
+    "perfect_sentences": 205,
+    "total_true_positives": 593,
+    "total_false_positives": 1745,
+    "total_false_negatives": 794
+  },
+  "end_to_end_pipeline": {
+    "accuracy": 0.20525224602626124,
+    "correct": 297,
+    "total": 1447
+  }
+}
