@@ -194,7 +194,6 @@ def save_results(results: Dict, stats: Dict, baseline, output_path: str):
             "total_samples": results['total'],
             "correct_predictions": results['correct'],
             "incorrect_predictions": results['total'] - results['correct'],
-            "num_unique_connectives": stats['num_connectives'],
             "num_senses": stats['num_senses'],
             "global_majority_sense": stats['global_majority_sense'],
             "sense_distribution": stats['sense_distribution'],

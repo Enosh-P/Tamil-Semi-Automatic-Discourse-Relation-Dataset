@@ -4,7 +4,6 @@
     "total_samples": 7233,
     "correct_predictions": 6106,
     "incorrect_predictions": 1127,
-    "num_unique_connectives": 2500,
     "num_senses": 12,
     "global_majority_sense": "['Expansion.Conjunction']",
     "sense_distribution": {
