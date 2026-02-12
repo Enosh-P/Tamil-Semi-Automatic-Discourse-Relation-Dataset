@@ -52,11 +52,6 @@ class TamilConnective(BaseModel):
     morphology: Morphology
 
 
-class EnglishConnective(BaseModel):
-    raw_text: str
-    span: List[int]
-
-
 class Relation(BaseModel):
     type: DiscourseRelationType
     sense: RelationSense
@@ -78,7 +73,7 @@ class EnglishEntry(BaseModel):
     sentence: str
     arg1: SpanText
     arg2: SpanText
-    connective: EnglishConnective
+    connective: SpanText
     relation: Relation
 
 
