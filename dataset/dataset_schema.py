@@ -49,7 +49,25 @@ class TamilConnective(BaseModel):
     raw_text: str
     span: List[int]
     type: TamilConnectiveType
-    morphology: Morphology
+    morphology: List[Morphology]
+
+    @field_validator("morphology", mode="before")
+    @classmethod
+    def parse_morphology(cls, v):
+        """
+        Ensure morphology is always a list of Morphology objects.
+        Converts None or malformed data to empty list.
+        """
+        if v is None:
+            return []
+        if isinstance(v, dict):
+            # single morphology object, wrap in list
+            return [v]
+        if isinstance(v, list):
+            # list of dicts, keep as is
+            return v
+        # fallback
+        return []
 
 
 class Relation(BaseModel):
