@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List
 from pydantic import BaseModel, field_validator
 import ast
 
@@ -48,10 +48,8 @@ class Morphology(BaseModel):
 class TamilConnective(BaseModel):
     raw_text: str
     span: List[int]
-
-    # Optional fields (only Tamil has these)
     type: TamilConnectiveType
-    morphology: Optional[Morphology] = None
+    morphology: Morphology
 
 
 class EnglishConnective(BaseModel):
